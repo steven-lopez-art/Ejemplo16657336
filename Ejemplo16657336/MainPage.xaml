@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejemplo16657336.MainPage">
+
+    <!--Borramos el codigo anterior y cambiamos las etiquetas ScrollView por la etiqueta StackLayout-->
+    
+    
+    <StackLayout Margin="20,35,20,20"> <!--Margen-->
+        <Label FontSize="Medium" HorizontalOptions="Center"> <!--Ponemos sus propiedades centradas y las dimenciones de la letras-->
+
+            <Label.FormattedText>
+                <FormattedString>
+
+                    <!--La etiqueta Span es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.-->
+
+                    <!--Le ponemos sus atributos el primer contenedor llevara letra blanca estilo negrita y Strikethrough que es para subrayar la oracion-->
+                    <Span TextDecorations="Strikethrough" FontAttributes="Bold">Programacion orientada a objetos</Span>
+                    
+                    <!--Le ponemos sus atributos al segundo contenedor llevara la letra azul cursiva-->
+                    <Span FontAttributes="Italic" TextColor="Blue">Es un paradigma de la programacion</Span>
+
+                    <!--Le ponemos sus atributos al tercer contenedor llevara la letra gris y Strikethrough que es para subrayar la oracion-->
+                    <Span TextColor="Gray" TextDecorations="Strikethrough" >Que nos ayuda a obtener mejor resultado</Span>
+                    
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        
+        <!--Text="Bienvenido :D" HorizontalOptions="StartAndExpand"
+               TextColor="Green" 
+               FontAttributes="Bold"
+               FontSize="22"
+               TextDecorations="Strikethrough"/>-->
+
+    </StackLayout>
+
+</ContentPage>

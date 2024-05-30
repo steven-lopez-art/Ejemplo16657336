@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio3calificaciones6657336.MainPage">
+
+    <!--Ponemos la etiqueta StackLayout para poder organiraz vertical u horizontal los elementos-->
+    <StackLayout>
+
+        <!--Un label para dar el mensaje de que debe de ingresar 5 calificaciones la persona-->
+        <Label Text="Ingrese las 5 calificaciones:" />
+
+        <!--Cinco entry donde ingresara la persona las 5 calificaciones-->
+        <Entry x:Name="calificacion1" Placeholder="Calificación 1" />
+        <Entry x:Name="calificacion2" Placeholder="Calificación 2" />
+        <Entry x:Name="calificacion3" Placeholder="Calificación 3" />
+        <Entry x:Name="calificacion4" Placeholder="Calificación 4" />
+        <Entry x:Name="calificacion5" Placeholder="Calificación 5" />
+
+        <!--Un boton donde estara el texto Calcular promedio con su evento Button_Clicked-->
+        <Button Text="Calcular Promedio"
+                Clicked="Button_Clicked" />
+
+        <!--Un label para mostrar el promedio de las calificaciones-->
+        <Label x:Name="resultado" />
+
+        <!--Imagen aluciba al programa realizado-->
+        <Image Source="notas.jpg" HorizontalOptions="Center" VerticalOptions="Center"
+               HeightRequest="180" WidthRequest="280"/>
+    </StackLayout>
+
+</ContentPage>

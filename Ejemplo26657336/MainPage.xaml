@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio26657336.MainPage">
+
+    <!--Borramos el codigo anterior y cambiamos las etiquetas ScrollView por la etiqueta StackLayout-->
+
+    <StackLayout Margin="20,35,20,20">
+
+        <!--Escribimos el texto del boton con el color de fondo 
+        color de letras el color del borde tamaño y posicion y 
+        escribimos el evento  Clicked="Button_Clicked"--> 
+        <Button Text="Presione" 
+                TextColor="Green"
+                BackgroundColor="Yellow"
+                BorderColor="Red"
+                BorderWidth="3"
+                CornerRadius="20"
+                WidthRequest="200"
+                HeightRequest="100"
+                Clicked="Button_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

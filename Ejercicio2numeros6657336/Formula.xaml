@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio2numeros6657336.Formula"
+             Title="Formula">
+
+    <!--La etiqueta StackLayout la ponemos que nos ayudara a apilar los elementos en vertical o horizontal-->
+    <StackLayout>
+
+        <!--Ponemos el titulo de nuestro programa que se llamarai calcular con sus pripiedades-->
+        <Label Text="Calcular"
+               VerticalOptions="Start"
+               HorizontalOptions="Start"/>
+
+        <!--Ponemos los Entry dode se ingresaran los 2 numeros que se sumaran, multiplicaran y dividiran--> 
+        <Entry x:Name="Entry1" Placeholder="Introduce A"/>
+        <Entry x:Name="Entry2" Placeholder="Introduce B"/>
+        
+        <!--Se pone el entry donde se mostrara el resultado de la ecuacion anterior-->
+        <Entry x:Name="Entryr" Placeholder="Resultado"/>
+
+        <!--Colocamos el boton que tiene de texto calcular con el evento Button_Clicked-->
+        <Button Text="Calcular" Clicked="Button_Clicked"/>
+
+        <!--Una imagen aluciba al programa-->
+        <Image Source="numeros.jpg" HorizontalOptions="Center" VerticalOptions="Center"
+               HeightRequest="200" WidthRequest="200"/>
+
+    </StackLayout>
+ 
+</ContentPage>

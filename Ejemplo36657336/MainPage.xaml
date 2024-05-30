@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio36657336.MainPage">
+
+    <!--Borramos el codigo anterior y cambiamos las etiquetas ScrollView por la etiqueta StackLayout-->
+    <StackLayout Margin="20,35,20,20">
+        
+        <!--Agregamos un Entry y colocamos el nombre Usuario la cantidad de valores que se podran ingresar y los demas propiedades-->
+        <Entry Placeholder="Usuario"
+               MaxLength="10"
+               IsSpellCheckEnabled="True"
+               IsTextPredictionEnabled="True"
+               IsPassword="True"
+               Keyboard="Numeric"
+               CharacterSpacing="10"
+               TextChanged="Entry_TextChanged"
+               Completed="Entry_Completed"/>
+        
+    </StackLayout>
+
+</ContentPage>

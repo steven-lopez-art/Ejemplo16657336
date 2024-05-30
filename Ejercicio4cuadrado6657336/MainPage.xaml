@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio4cuadrado6657336.MainPage">
+
+    <!--Cambiamos la etiqueta a StackLayout para poder organizar los elementos 
+    secundarios en horizontal o vertical-->
+    <StackLayout>
+        
+        <!--Colocamos un label donde le dira a a persona que tiene que 
+        ingresar un numero entero positivo-->
+            <Label
+                Text="Ingrese un número entero positivo:" />
+
+        <!--Colocamos el entry donde ingresara el numero con una propiedad Keyboard-->
+            <Entry 
+                x:Name="NumeroEntry" Placeholder="Número" Keyboard="Numeric" />
+
+        <!--Un boton con un mensaje de calcular con el evento Button_Clicked-->
+            <Button
+                Text="Calcular" Clicked="Button_Clicked" />
+
+        <!--Un label son el resultado que se mostrara-->
+            <Label x:Name="LabelResultado"/>
+        
+        <!--Una imagen aluciba al programa realizado-->
+        <Image Source="cuadrado.png" HorizontalOptions="Center" VerticalOptions="Center"
+               HeightRequest="200" WidthRequest="400"/>
+        
+    </StackLayout>
+
+</ContentPage>
